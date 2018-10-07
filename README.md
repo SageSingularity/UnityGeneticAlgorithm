@@ -8,7 +8,11 @@ One implementation of genetic algorithms using the Unity3D game engine.
   - [Chromosome Script](#chromosome-script)
 
 ## How to Play
-Click on the individual colored circles on the screen in order to 'Eliminate' them. The algorithm focuses on the color of the circles, and After ten seconds, or once all of the circles have been clicked, a new generation is created based on the entities that survived the longest. The top half of individuals will each breed to create two children, and the new generation will populate the screen. It's important to note that the children don't inherit a 'Mixture' of their parents DNA; instead they inherit either one, or the other parents DNA.
+Click on the individual colored circles on the screen in order to 'Eliminate' them. The algorithm focuses on the color of the circles, and After ten seconds, or once all of the circles have been clicked, a new generation is created based on the entities that survived the longest. The top half of individuals will each breed to create two children, and the new generation will populate the screen.
+
+Things to note:
+- The end result is highly dependent on the initial population; for example, if by random chance you start out with nothing but purple circles, there's no way to breed in a new color short of introducing new individuals.
+- It's important to note that the children don't inherit a 'Mixture' of their parents DNA; instead they inherit either one, or the other parents DNA. For example, either the specific red value for Parent_1 is chosen, or the specific red value for Parent_2 is chosen.
 
 ## How it Works
 Each spawned entity has it's own 'Chromosome' script, that contains its 'DNA'. In this case, the chosen attributes are the Red Green Blue (RGB) values of color for the Unity3D sprite renderer. As the player clicks on each circle, the time of the click is recorded and that circle/entity is 'Killed'. The top 50% of individuals that survive are then allowed to breed the next generation of circles.
@@ -48,3 +52,6 @@ This script controls the following:
 - The length of the lifespan for the entity it is attached to
 - RGB values for the entity it is attached to
 - Detects collision based on the player 'Clicking' on the entity on the screen, and 'Kills' it once it's been clicked on
+
+### Mutation
+Within PopulationManager script's Breed() function there is a chance of using random values for the Entity's RGB value representating a mutation. We only want to mutate a small percentage of the time because it's important to keep the overall fitness that is being bred into the population.
