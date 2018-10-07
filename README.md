@@ -8,7 +8,7 @@ One implementation of genetic algorithms using the Unity3D game engine.
   - [Chromosome Script](#chromosome-script)
 
 ## How to Play
-Click on the individual colored circles on the screen in order to 'Eliminate' them. The algorithm focuses on the color of the circles, and After ten seconds, or once all of the circles have been clicked, a new generation is created based on the entities that survived the longest. The top half of individuals will each breed to create two children, and the new generation will populate the screen.
+Click on the individual colored circles on the screen in order to 'Eliminate' them. The algorithm focuses on the color of the circles, and After ten seconds, or once all of the circles have been clicked, a new generation is created based on the entities that survived the longest. The top half of individuals will each breed to create two children, and the new generation will populate the screen. It's important to note that the children don't inherit a 'Mixture' of their parents DNA; instead they inherit either one, or the other parents DNA.
 
 ## How it Works
 Each spawned entity has it's own 'Chromosome' script, that contains its 'DNA'. In this case, the chosen attributes are the Red Green Blue (RGB) values of color for the Unity3D sprite renderer. As the player clicks on each circle, the time of the click is recorded and that circle/entity is 'Killed'. The top 50% of individuals that survive are then allowed to breed the next generation of circles.
