@@ -1,5 +1,6 @@
 # UnityGeneticAlgorithm
 One implementation of genetic algorithms using the Unity3D game engine.
+ - To play the game, [click here](https://sagesingularity.github.io/UnityGeneticAlgorithm/)
 
 # Table of Contents
 - [How to Play](#how-to-play)
