@@ -20,6 +20,7 @@ This script controls the following:
 
 The core genetic algorithm is within the Breed() function of PopulationManager.cs and functions like so (Pseudo-code):
 
+```
 if a number in the range 0-4 has been generated:
 - Offspring.Red = Parent_1.Red
 else if a number in the range 5-10 has been genereated:
@@ -34,5 +35,6 @@ if a number in the range 0-4 has been generated:
 - Offspring.Blue = Parent_1.Blue
 else if a number in the range 5-10 has been genereated:
 - Offspring.Blue = Parent_2.Blue
+```
 
 As you can see from the above, each offspring has a 50% chance of inheriting a color value from Parent_1 and a 50% chance of inheriting a color value from Parent_2.
