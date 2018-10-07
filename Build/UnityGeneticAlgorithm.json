@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "UnityGeneticAlgorithm.data.unityweb",
+"asmCodeUrl": "UnityGeneticAlgorithm.asm.code.unityweb",
+"asmMemoryUrl": "UnityGeneticAlgorithm.asm.memory.unityweb",
+"asmFrameworkUrl": "UnityGeneticAlgorithm.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}
