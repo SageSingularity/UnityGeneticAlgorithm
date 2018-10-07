@@ -6,6 +6,7 @@ One implementation of genetic algorithms using the Unity3D game engine.
 - [How it Works](#how-it-works)
   - [PopulationManager Script](#populationmanager-script)
   - [Chromosome Script](#chromosome-script)
+  - [Mutation](#mutation)
 
 ## How to Play
 Click on the individual colored circles on the screen in order to 'Eliminate' them. The algorithm focuses on the color of the circles, and After ten seconds, or once all of the circles have been clicked, a new generation is created based on the entities that survived the longest. The top half of individuals will each breed to create two children, and the new generation will populate the screen.
